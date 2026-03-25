@@ -1,6 +1,6 @@
 const User = require('../models/User');
 
-const PLAN_LIMITS = { free: 5, starter: 50, pro: 200, unlimited: 999999 };
+const PLAN_LIMITS = { free: 5, starter: 20, pro: 100, unlimited: 999999 };
 
 module.exports = async (req, res, next) => {
   const user = await User.findById(req.user._id);
